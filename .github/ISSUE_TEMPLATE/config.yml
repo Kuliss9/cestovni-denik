@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Soukromá zpětná vazba přes TestFlight
+    url: https://testflight.apple.com/
+    about: Otevřete TestFlight, vyberte Cestovní deník a odešlete zpětnou vazbu. Platí až po přijetí do testování.
