@@ -1,0 +1,63 @@
+name: Nahlásit chybu
+description: Popište problém při testování Cestovního deníku.
+title: "[Chyba]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Nejprve vyhledejte podobné hlášení. Nepřikládejte soukromá cestovní data, doklady, API klíče ani hesla."
+  - type: input
+    id: verze
+    attributes:
+      label: Verze a číslo sestavení
+      description: Opište údaje z TestFlightu.
+      placeholder: "Verze …, sestavení …"
+    validations:
+      required: true
+  - type: dropdown
+    id: platforma
+    attributes:
+      label: Platforma
+      options:
+        - macOS
+        - iPhone
+        - iPad
+        - Více platforem
+    validations:
+      required: true
+  - type: input
+    id: prostredi
+    attributes:
+      label: Zařízení a verze systému
+      placeholder: "Model zařízení, verze macOS / iOS / iPadOS"
+    validations:
+      required: true
+  - type: textarea
+    id: postup
+    attributes:
+      label: Jak chybu zopakovat
+      description: Uveďte jednotlivé kroky a případně zda jste byli připojeni k internetu.
+    validations:
+      required: true
+  - type: textarea
+    id: ocekavani
+    attributes:
+      label: Co jste očekávali
+    validations:
+      required: true
+  - type: textarea
+    id: vysledek
+    attributes:
+      label: Co se skutečně stalo
+      description: Přidejte chybové hlášení nebo snímek se zakrytými citlivými údaji.
+    validations:
+      required: true
+  - type: dropdown
+    id: opakovani
+    attributes:
+      label: Jak často se chyba objevuje
+      options:
+        - Při každém pokusu
+        - Občas
+        - Zatím jednou
+    validations:
+      required: true

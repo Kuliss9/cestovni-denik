@@ -1,0 +1,33 @@
+name: Navrhnout vylepšení
+description: Co by vám usnadnilo používání Cestovního deníku?
+title: "[Návrh]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Nejprve vyhledejte podobný návrh. Použijte příklady bez soukromých cestovních údajů."
+  - type: textarea
+    id: potreba
+    attributes:
+      label: Co se snažíte udělat
+      description: Popište situaci a co vám v ní dnes chybí.
+    validations:
+      required: true
+  - type: textarea
+    id: navrh
+    attributes:
+      label: Jak by vám aplikace mohla pomoci
+    validations:
+      required: true
+  - type: dropdown
+    id: platforma
+    attributes:
+      label: Platforma
+      options:
+        - Všechny platformy
+        - macOS
+        - iPhone
+        - iPad
+  - type: textarea
+    id: alternativa
+    attributes:
+      label: Jak to řešíte dnes
